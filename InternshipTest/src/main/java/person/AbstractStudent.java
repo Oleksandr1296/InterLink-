@@ -4,9 +4,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import person.consciousness.AbstractKnowledge;
 
+import java.io.Serializable;
+
 @Data
 @EqualsAndHashCode(exclude = "knowledge")
-public abstract class AbstractStudent {
+public abstract class AbstractStudent implements Serializable {
     private long id;
     private String fullName;
     private AbstractKnowledge knowledge;

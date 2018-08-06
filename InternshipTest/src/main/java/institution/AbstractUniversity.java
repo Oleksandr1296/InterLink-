@@ -25,6 +25,8 @@ public abstract class AbstractUniversity {
 
     public abstract void addStudent(AbstractStudent student);
 
+    public abstract void addStudents(Collection<AbstractStudent> students);
+
     public abstract double getAverageRating();
 
 }
