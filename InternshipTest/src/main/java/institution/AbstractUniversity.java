@@ -16,13 +16,6 @@ public abstract class AbstractUniversity {
     private Collection<AbstractStudent> students;
     private AbstractDeanery deanery;
 
-    public AbstractUniversity(long id, String name, Collection<AbstractStudent> students, AbstractDeanery deanery) {
-        this.id = id;
-        this.name = name;
-        this.students = students;
-        this.deanery = deanery;
-    }
-
     public AbstractUniversity(long id, String name, AbstractDeanery deanery) {
         this.id = id;
         this.name = name;
@@ -31,8 +24,6 @@ public abstract class AbstractUniversity {
     }
 
     public abstract void addStudent(AbstractStudent student);
-
-    public abstract void addStudents(Collection<AbstractStudent> students);
 
     public abstract double getAverageRating();
 

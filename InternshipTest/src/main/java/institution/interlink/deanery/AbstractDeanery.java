@@ -14,5 +14,5 @@ public abstract class AbstractDeanery {
         this.name = name;
     }
 
-    public abstract void calculateAverageRank(Collection<AbstractStudent> students);
+    public abstract double calculateAverageRank(Collection<AbstractStudent> students);
 }

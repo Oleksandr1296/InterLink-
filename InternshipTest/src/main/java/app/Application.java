@@ -22,7 +22,7 @@ public class Application {
         university.addStudent(new DefaultStudent(3, "Maria Perechrest", new DefaultKnowledge(50.3)));
 
         AbstractInternship internship = new DefaultInternship("InternShip", university.getStudents(),
-                new DefaultSelectionCommittee("Committee"), university.getAverageRating());
+                new DefaultSelectionCommittee("Committee", university.getAverageRating()));
 
         System.out.println("List of internship's students:");
         System.out.println(internship.getStudents());

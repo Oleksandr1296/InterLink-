@@ -4,12 +4,12 @@ import person.AbstractStudent;
 
 public class DefaultSelectionCommittee extends AbstractSelectionCommittee {
 
-    public DefaultSelectionCommittee(String name) {
-        super(name);
+    public DefaultSelectionCommittee(String name, double averageRating) {
+        super(name, averageRating);
     }
 
     @Override
     public boolean hasStudentPass(AbstractStudent student) {
-        return false;
+        return Double.compare(student.getKnowledge().getRank(), getAverageRating()) >= 0;
     }
 }
